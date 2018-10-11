@@ -15,7 +15,9 @@ pipeline {
         stage('Restore') {
             steps {
                 echo 'Restoringgg...'
+                dir('Caioooo'){
                 bat "dotnet restore"
+                }
             }
         }
         stage('Pwd') {
