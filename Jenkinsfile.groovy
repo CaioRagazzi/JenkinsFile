@@ -15,8 +15,6 @@ pipeline {
         stage('Restore') {
             steps {
                 echo 'Restoringgg...'
-                dir('Caioooo'){
-                bat "dir"
                 }
             }
         }
