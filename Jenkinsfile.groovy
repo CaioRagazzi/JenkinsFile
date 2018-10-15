@@ -27,7 +27,7 @@ pipeline {
             steps {
                 echo 'Building..'
                 dir('Caioooo'){
-                bat "dotnet clean"
+                bat "dotnet clean ConsultaCredito.sln"
                 }
             }
         }
