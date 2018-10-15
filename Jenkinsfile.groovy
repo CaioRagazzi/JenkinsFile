@@ -16,7 +16,6 @@ pipeline {
             steps {
                 echo 'Restoringgg...'
                 }
-            }
         }
         stage('Pwd') {
             steps {
