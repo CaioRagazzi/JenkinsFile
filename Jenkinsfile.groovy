@@ -26,7 +26,9 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
+                dir('Caioooo'){
                 bat "dotnet clean"
+                }
             }
         }
         stage('Deploy') {
