@@ -16,7 +16,7 @@ pipeline {
             steps {
                 echo 'Restoringgg...'
                 dir('Caioooo'){
-                bat "dotnet restore"
+                bat "dir"
                 }
             }
         }
