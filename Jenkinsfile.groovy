@@ -14,7 +14,9 @@ pipeline {
         }
         stage('teste') {
             steps {
-                println "asdkjadklsjkasd"
+                dir('Teste'){
+                    println(dir())
+                }
                 }
         }
         // stage('Pwd') {
