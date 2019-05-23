@@ -7,36 +7,36 @@ pipeline {
                 script{
                     println "=======Load Parameters============"
                     dir('Caioooo'){
-                        checkout([$class: 'GitSCM', branches: [[name: '*/master']], userRemoteConfigs: [[url: 'https://github.com/CaioRagazzi/ConsultaCredito.git']]])
+                        checkout([$class: 'GitSCM', branches: [[name: '*/master']], userRemoteConfigs: [[url: 'https://github.com/CaioRagazzi/TesteHotel.git']]])
                     }
                 }
             }
         }
-        stage('Restore') {
-            steps {
-                dir('Caioooo'){
-                    bat "dotnet restore ConsultaCredito.sln"
-                }
-                }
-        }
-        stage('Pwd') {
-            steps {
-                echo 'Pwding...'
-                println(pwd())
-            }
-        }
-        stage('Build') {
-            steps {
-                echo 'Building..'
-                dir('Caioooo'){
-                bat "dotnet clean ConsultaCredito.sln"
-                }
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
-        }
+        // stage('Restore') {
+        //     steps {
+        //         dir('Caioooo'){
+        //             bat "dotnet restore ConsultaCredito.sln"
+        //         }
+        //         }
+        // }
+        // stage('Pwd') {
+        //     steps {
+        //         echo 'Pwding...'
+        //         println(pwd())
+        //     }
+        // }
+        // stage('Build') {
+        //     steps {
+        //         echo 'Building..'
+        //         dir('Caioooo'){
+        //         bat "dotnet clean ConsultaCredito.sln"
+        //         }
+        //     }
+        // }
+        // stage('Deploy') {
+        //     steps {
+        //         echo 'Deploying....'
+        //     }
+        // }
     }
 }
