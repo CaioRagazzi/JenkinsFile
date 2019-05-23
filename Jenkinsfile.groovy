@@ -12,11 +12,11 @@ pipeline {
                 }
             }
         }
-        stage('teste') {
-            steps {
-                println "asdkjadklsjkasd"
-                }
-        }
+        // stage('teste') {
+        //     steps {
+        //         println "asdkjadklsjkasd"
+        //         }
+        // }
         // stage('Pwd') {
         //     steps {
         //         echo 'Pwding...'
