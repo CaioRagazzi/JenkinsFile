@@ -16,7 +16,7 @@ pipeline {
             steps {
                 script{
                     dir('Caioooo'){
-                        println(dir)
+                        bat 'dir'
                     }
                 }
             }
