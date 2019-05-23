@@ -12,10 +12,6 @@ pipeline {
                 }
             }
         }
-        stage('teste') {
-            steps {
-                println "alou aqui teste teste"
-        }
         // stage('Restore') {
         //     steps {
         //         dir('Caioooo'){
@@ -42,5 +38,5 @@ pipeline {
         //         echo 'Deploying....'
         //     }
         // }
-    }
+    
 }
