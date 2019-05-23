@@ -14,7 +14,7 @@ pipeline {
         }
         stage('teste') {
             steps {
-                dir('Teste'){
+                dir('Caioooo'){
                     println(dir())
                 }
                 }
