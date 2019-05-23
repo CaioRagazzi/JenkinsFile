@@ -14,8 +14,12 @@ pipeline {
         }
         stage('teste') {
             steps {
-                println(pwd())
+                script{
+                    dir('Caioooo'){
+                        println(dir)
+                    }
                 }
+            }
         }
         // stage('Pwd') {
         //     steps {
