@@ -12,13 +12,11 @@ pipeline {
                 }
             }
         }
-        // stage('Restore') {
-        //     steps {
-        //         dir('Caioooo'){
-        //             bat "dotnet restore ConsultaCredito.sln"
-        //         }
-        //         }
-        // }
+        stage('teste') {
+            steps {
+                println "asdkjadklsjkasd"
+                }
+        }
         // stage('Pwd') {
         //     steps {
         //         echo 'Pwding...'
