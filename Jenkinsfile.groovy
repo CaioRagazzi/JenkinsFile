@@ -14,9 +14,7 @@ pipeline {
         }
         stage('teste') {
             steps {
-                dir('Caioooo'){
-                    println(dir())
-                }
+                println(pwd())
                 }
         }
         // stage('Pwd') {
